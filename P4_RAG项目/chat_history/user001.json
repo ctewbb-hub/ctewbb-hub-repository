@@ -1,0 +1,202 @@
+[
+  {
+    "type": "human",
+    "data": {
+      "content": "我的体重58kg,尺码推荐",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "根据您提供的体重（58kg），结合《尺码推荐指南》中的上衣尺码标准：\n\n- **M码**：体重范围为48–58kg，身高建议160–168cm  \n- **L码**：体重范围为56–66kg，身高建议165–173cm  \n\n✅ 若您的身高在 **160–168cm** 之间，且偏好合身版型 → 推荐 **M码**  \n✅ 若您的身高 ≥165cm，或肩宽较宽、腹部有肉、喜欢宽松穿着 → 建议选 **L码**（备注明确提示：“偏宽松、肩宽、肚子有肉优先选大一码”）\n\n⚠️ 注意：该体重区间横跨M/L两码，**最终推荐需结合您的身高与版型偏好**。如方便提供身高，可为您进一步精准匹配。\n\n（注：裤子/裙子需腰围或身高数据，当前信息不足，暂不推荐）",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  },
+  {
+    "type": "human",
+    "data": {
+      "content": "你好",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "你好！很高兴为您服务 😊  \n请问您有什么问题或需要哪方面的帮助？（例如尺码推荐、产品咨询、订单查询等）",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  },
+  {
+    "type": "human",
+    "data": {
+      "content": "你是谁?哪个模型",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "您好，我是通义千问（Qwen），由通义实验室研发的超大规模语言模型。我能够回答问题、创作文字，比如写故事、写公文、写邮件、写剧本、逻辑推理、编程等等，还能表达观点，玩游戏等。\n\n需要说明的是：您当前对话中所看到的“陈先生”（见参考资料）是系统内标注的一位人工运营人员（Mr. Chen），并非我本人。我是AI助手，而陈先生是负责内容审核或系统运维的相关工作人员。\n\n如有任何具体问题，我很乐意为您提供专业、准确的帮助！",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  },
+  {
+    "type": "human",
+    "data": {
+      "content": "我的体重是120斤,尺码推荐",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "您好！您的体重是 **120斤**，即 **60kg**（1斤 = 0.5kg）。\n\n根据您提供的《尺码推荐指南》中**上衣（T恤/卫衣/衬衫）**的尺码标准：\n\n- **M码**：体重 48–58kg  \n- **L码**：体重 56–66kg ✅  \n- **XL码**：体重 64–75kg  \n\n→ 您的体重 **60kg 正好落在 L 码范围内**，且接近该档位中段，适配性良好。\n\n📌 **进一步精准推荐需结合身高**：  \n- 若身高在 **165–173cm** 区间 → **L码为首选**（标准匹配）  \n- 若身高 ≥170cm，或肩宽较宽、腹部有肉、偏好宽松版型 → 可考虑 **XL码**（指南明确提示：“偏宽松、肩宽、肚子有肉优先选大一码”）  \n- 若身高 ≤164cm 且体型偏瘦/追求修身效果 → 可试穿 M 码，但需注意可能略紧（因已超M码上限2kg）\n\n💡温馨提示：裤子需腰围数据（如您有腰围cm数，可帮您对应26–32码）；裙子则按身高匹配（如S码对应155–162cm等）。\n\n欢迎补充身高或其他需求，我将为您定制更精准建议！",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  },
+  {
+    "type": "human",
+    "data": {
+      "content": "你好,简要介绍你自己",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "你好！我是**通义千问（Qwen）**，由阿里云研发的超大规模语言模型。我能够理解并生成自然语言、代码、表格等多类型内容，支持问答、创作、逻辑推理、多语言等多种能力。\n\n需要说明的是：您资料中提到的“陈先生”是系统后台的一位人工运营人员（Mr. Chen），负责内容审核或系统维护等工作，**并非我本人**——我是AI助手，而他是真人同事 😊\n\n如有任何问题，我很乐意为您提供专业、清晰、有温度的帮助！",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  },
+  {
+    "type": "human",
+    "data": {
+      "content": "你好,我的体重120斤,尺码推荐",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "您好！您的体重是 **120斤 = 60kg**，依据您提供的《尺码推荐指南》：\n\n✅ **上衣（T恤/卫衣/衬衫）推荐：**  \n- **L码**：身高165–173cm，体重56–66kg → **60kg 完全落在L码标准范围内，为首选推荐**。  \n- 若您身高 ≥170cm、肩宽较宽、腹部有肉，或偏好宽松穿着 → 可考虑 **XL码**（指南备注：“偏宽松、肩宽、肚子有肉优先选大一码”）。  \n- 若身高 ≤164cm 且体型偏瘦、追求修身效果，可试M码，但需注意可能略紧（已超M码上限2kg）。\n\n⚠️ 裤子/裙子需额外信息：  \n- 裤子需提供**腰围（cm）**，才能对应26–32码；  \n- 裙子可按身高参考：S（155–162cm）、M（160–168cm）、L（165–173cm）、XL（170–178cm）。\n\n如方便提供您的**身高**或**腰围**，我可为您进一步精准匹配 👍",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  },
+  {
+    "type": "human",
+    "data": {
+      "content": "你好,简单介绍你自己",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "你好！我是**通义千问（Qwen）**，阿里云自主研发的超大规模语言模型。我能够理解并生成高质量的中文与多语言文本，支持问答、写作、逻辑推理、编程等任务，致力于提供专业、准确、友好的服务。\n\n需要说明的是：您资料中提到的“陈先生”是系统后台的人工运营人员（Mr. Chen），负责内容审核或系统维护——**他是真人同事，而我是AI助手**，我们协同保障服务的专业性与可靠性 😊\n\n如有任何问题，欢迎随时告诉我！",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  },
+  {
+    "type": "human",
+    "data": {
+      "content": "我体重120斤,尺码推荐",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "您的体重是 **120斤 = 60kg**，依据您提供的《尺码推荐指南》：\n\n🔹 **上衣（T恤/卫衣/衬衫）推荐：**  \n✅ **首选 L 码**（适用身高165–173cm，体重56–66kg）——60kg 正好处于该档位中段，匹配度高。  \n➡️ 若您：  \n- 身高 ≥170cm，或  \n- 肩宽较宽、腹部有肉、偏好宽松版型  \n→ 建议选 **XL 码**（指南明确提示：“偏宽松、肩宽、肚子有肉优先选大一码”）。\n\n🔸 裤子/裙子需补充信息：  \n- 裤子请提供**腰围（cm）**，可精准对应26–32码；  \n- 裙子可按身高参考：S（155–162cm）、M（160–168cm）、L（165–173cm）、XL（170–178cm）。\n\n如您愿意提供**身高**或**腰围**，我可立刻为您锁定最适尺码 🌟",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  }
+]
