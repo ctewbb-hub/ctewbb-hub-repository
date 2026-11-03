@@ -1,0 +1,8 @@
+项目描述:
+面向服装电商场景搭建知识库问答系统，支持运营上传尺码指南/配色方案等文档，用户以自然语言咨询尺码与搭配问题，系统基于检索增强生成（RAG）给出有资料依据的回答，并支持多轮对话历史记录与流式输出。
+主要工作:
+1.设计“上传—切分—向量化—入库—检索—生成”的RAG全链路，基于RecursiveCharacter-TextSplitter完成中文文档切分，通过DashScopeEmbeddings向量化后持久化至Chroma，实现知识库与应用的解耦。
+2.基于LCEL编排问答链：RunnablePassthrough.assign(context=input|retriever) |Prompt|ChatTongyi| StrOutputParser，以声明式管道串联检索与生成，新增环节只需插入Runnable，链路扩展成本低。
+3.设计MD5内容指纹+本地台账的幂等入库机制，重复文档自动跳过，避免向量库冗余与检索结果被同源内容稀释。
+4.基于RunnableWithMessageHistory+自定义FileChatMessageHistory实现按session_id隔离的持久化多轮记忆，通过messages_from_dict/message_to_dict完成消息对象与JSON的双向序列化，服务重启后上下文不丢失。
+5.前端使用Streamlit开发知识库管理页与智能客服页，借助session_state解决脚本重跑导致的状态丢失问题，并用生成器+st.write实现逐Token流式渲染，显著改善等待体验。
