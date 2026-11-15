@@ -1,0 +1,110 @@
+2026-11-13 16:17:18,679 - agent - INFO - logger_handler.py:55 - 信息日志
+2026-11-13 16:17:18,687 - agent - ERROR - logger_handler.py:56 - 错误日志
+2026-11-13 16:17:18,688 - agent - WARNING - logger_handler.py:57 - 警告日志
+2026-11-13 16:17:18,688 - agent - DEBUG - logger_handler.py:58 - 调试日志
+2026-11-13 16:17:57,558 - agent - INFO - vector_store.py:81 - [加载知识库]D:\AI_Coding\AI大模型RAG与智能体开发\P6_Agent项目\data\涂鸦扫地机器人DP功能点及交互逻辑.pdf成功
+2026-11-13 16:34:36,018 - agent - INFO - vector_store.py:81 - [加载知识库]D:\AI_Coding\AI大模型RAG与智能体开发\P6_Agent项目\data\扫地机器人常见问题.pdf成功
+2026-11-13 16:34:36,020 - agent - WARNING - vector_store.py:86 - [加载知识库]D:\AI_Coding\AI大模型RAG与智能体开发\P6_Agent项目\data\故障排除.txt失败: RuntimeError: Error loading D:\AI_Coding\AI大模型RAG与智能体开发\P6_Agent项目\data\故障排除.txt
+2026-11-13 16:34:36,022 - agent - WARNING - vector_store.py:86 - [加载知识库]D:\AI_Coding\AI大模型RAG与智能体开发\P6_Agent项目\data\维护保养.txt失败: RuntimeError: Error loading D:\AI_Coding\AI大模型RAG与智能体开发\P6_Agent项目\data\维护保养.txt
+2026-11-13 16:34:36,023 - agent - WARNING - vector_store.py:86 - [加载知识库]D:\AI_Coding\AI大模型RAG与智能体开发\P6_Agent项目\data\选购指南.txt失败: RuntimeError: Error loading D:\AI_Coding\AI大模型RAG与智能体开发\P6_Agent项目\data\选购指南.txt
+2026-11-13 17:36:24,415 - agent - ERROR - file_handler.py:32 - [listdir_with_allowed_type]data不是文件夹
+2026-11-13 17:36:24,415 - agent - ERROR - file_handler.py:12 - [md5计算]文件txt不存在
+2026-11-13 17:36:24,415 - agent - ERROR - file_handler.py:15 - [md5计算]路径txt不是文件
+2026-11-13 17:36:24,415 - agent - ERROR - file_handler.py:26 - 计算文件txt的md5失败:[Errno 2] No such file or directory: 'txt'
+2026-11-13 17:36:24,416 - agent - WARNING - vector_store.py:79 - [加载知识库]txt内没有有效文本内容(文件内容为空)
+2026-11-13 17:36:24,416 - agent - ERROR - file_handler.py:12 - [md5计算]文件pdf不存在
+2026-11-13 17:36:24,416 - agent - ERROR - file_handler.py:15 - [md5计算]路径pdf不是文件
+2026-11-13 17:36:24,416 - agent - ERROR - file_handler.py:26 - 计算文件pdf的md5失败:[Errno 2] No such file or directory: 'pdf'
+2026-11-13 17:36:24,417 - agent - WARNING - vector_store.py:79 - [加载知识库]pdf内没有有效文本内容(文件内容为空)
+2026-11-13 17:40:24,861 - agent - INFO - vector_store.py:76 - [加载知识库]D:\AI_Coding\AI大模型RAG与智能体开发\P6_Agent项目\data\扫地机器人常见问题.pdf内容已经存在于知识库内,跳过
+2026-11-13 17:40:24,862 - agent - ERROR - vector_store.py:94 - [加载知识库]D:\AI_Coding\AI大模型RAG与智能体开发\P6_Agent项目\data\故障排除.txt加载失败:Error loading D:\AI_Coding\AI大模型RAG与智能体开发\P6_Agent项目\data\故障排除.txt
+Traceback (most recent call last):
+  File "D:\Anaconda3\envs\cpu_default\Lib\site-packages\langchain_community\document_loaders\text.py", line 43, in lazy_load
+    text = f.read()
+           ^^^^^^^^
+UnicodeDecodeError: 'gbk' codec can't decode byte 0xab in position 2: illegal multibyte sequence
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\AI_Coding\AI大模型RAG与智能体开发\P6_Agent项目\rag\vector_store.py", line 79, in load_document
+    documents: list[Document] = get_file_documents(path)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI_Coding\AI大模型RAG与智能体开发\P6_Agent项目\rag\vector_store.py", line 65, in get_file_documents
+    return txt_loader(read_path)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI_Coding\AI大模型RAG与智能体开发\P6_Agent项目\utils\file_handler.py", line 44, in txt_loader
+    return TextLoader(filepath).load()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\cpu_default\Lib\site-packages\langchain_core\document_loaders\base.py", line 43, in load
+    return list(self.lazy_load())
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\cpu_default\Lib\site-packages\langchain_community\document_loaders\text.py", line 56, in lazy_load
+    raise RuntimeError(f"Error loading {self.file_path}") from e
+RuntimeError: Error loading D:\AI_Coding\AI大模型RAG与智能体开发\P6_Agent项目\data\故障排除.txt
+2026-11-13 17:40:24,866 - agent - ERROR - vector_store.py:94 - [加载知识库]D:\AI_Coding\AI大模型RAG与智能体开发\P6_Agent项目\data\维护保养.txt加载失败:Error loading D:\AI_Coding\AI大模型RAG与智能体开发\P6_Agent项目\data\维护保养.txt
+Traceback (most recent call last):
+  File "D:\Anaconda3\envs\cpu_default\Lib\site-packages\langchain_community\document_loaders\text.py", line 43, in lazy_load
+    text = f.read()
+           ^^^^^^^^
+UnicodeDecodeError: 'gbk' codec can't decode byte 0xab in position 4: illegal multibyte sequence
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\AI_Coding\AI大模型RAG与智能体开发\P6_Agent项目\rag\vector_store.py", line 79, in load_document
+    documents: list[Document] = get_file_documents(path)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI_Coding\AI大模型RAG与智能体开发\P6_Agent项目\rag\vector_store.py", line 65, in get_file_documents
+    return txt_loader(read_path)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI_Coding\AI大模型RAG与智能体开发\P6_Agent项目\utils\file_handler.py", line 44, in txt_loader
+    return TextLoader(filepath).load()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\cpu_default\Lib\site-packages\langchain_core\document_loaders\base.py", line 43, in load
+    return list(self.lazy_load())
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\cpu_default\Lib\site-packages\langchain_community\document_loaders\text.py", line 56, in lazy_load
+    raise RuntimeError(f"Error loading {self.file_path}") from e
+RuntimeError: Error loading D:\AI_Coding\AI大模型RAG与智能体开发\P6_Agent项目\data\维护保养.txt
+2026-11-13 17:40:24,868 - agent - ERROR - vector_store.py:94 - [加载知识库]D:\AI_Coding\AI大模型RAG与智能体开发\P6_Agent项目\data\选购指南.txt加载失败:Error loading D:\AI_Coding\AI大模型RAG与智能体开发\P6_Agent项目\data\选购指南.txt
+Traceback (most recent call last):
+  File "D:\Anaconda3\envs\cpu_default\Lib\site-packages\langchain_community\document_loaders\text.py", line 43, in lazy_load
+    text = f.read()
+           ^^^^^^^^
+UnicodeDecodeError: 'gbk' codec can't decode byte 0xab in position 2: illegal multibyte sequence
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\AI_Coding\AI大模型RAG与智能体开发\P6_Agent项目\rag\vector_store.py", line 79, in load_document
+    documents: list[Document] = get_file_documents(path)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI_Coding\AI大模型RAG与智能体开发\P6_Agent项目\rag\vector_store.py", line 65, in get_file_documents
+    return txt_loader(read_path)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI_Coding\AI大模型RAG与智能体开发\P6_Agent项目\utils\file_handler.py", line 44, in txt_loader
+    return TextLoader(filepath).load()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\cpu_default\Lib\site-packages\langchain_core\document_loaders\base.py", line 43, in load
+    return list(self.lazy_load())
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\envs\cpu_default\Lib\site-packages\langchain_community\document_loaders\text.py", line 56, in lazy_load
+    raise RuntimeError(f"Error loading {self.file_path}") from e
+RuntimeError: Error loading D:\AI_Coding\AI大模型RAG与智能体开发\P6_Agent项目\data\选购指南.txt
+2026-11-13 17:42:33,768 - agent - INFO - vector_store.py:76 - [加载知识库]D:\AI_Coding\AI大模型RAG与智能体开发\P6_Agent项目\data\扫地机器人常见问题.pdf内容已经存在于知识库内,跳过
+2026-11-13 17:42:36,184 - agent - INFO - vector_store.py:91 - [加载知识库]D:\AI_Coding\AI大模型RAG与智能体开发\P6_Agent项目\data\故障排除.txt内容加载成功
+2026-11-13 17:42:37,108 - agent - INFO - vector_store.py:91 - [加载知识库]D:\AI_Coding\AI大模型RAG与智能体开发\P6_Agent项目\data\维护保养.txt内容加载成功
+2026-11-13 17:42:37,993 - agent - INFO - vector_store.py:91 - [加载知识库]D:\AI_Coding\AI大模型RAG与智能体开发\P6_Agent项目\data\选购指南.txt内容加载成功
+2026-11-13 17:43:23,075 - agent - INFO - vector_store.py:76 - [加载知识库]D:\AI_Coding\AI大模型RAG与智能体开发\P6_Agent项目\data\扫地机器人常见问题.pdf内容已经存在于知识库内,跳过
+2026-11-13 17:43:23,077 - agent - INFO - vector_store.py:76 - [加载知识库]D:\AI_Coding\AI大模型RAG与智能体开发\P6_Agent项目\data\故障排除.txt内容已经存在于知识库内,跳过
+2026-11-13 17:43:23,078 - agent - INFO - vector_store.py:76 - [加载知识库]D:\AI_Coding\AI大模型RAG与智能体开发\P6_Agent项目\data\维护保养.txt内容已经存在于知识库内,跳过
+2026-11-13 17:43:23,079 - agent - INFO - vector_store.py:76 - [加载知识库]D:\AI_Coding\AI大模型RAG与智能体开发\P6_Agent项目\data\选购指南.txt内容已经存在于知识库内,跳过
+2026-11-13 17:45:47,014 - agent - INFO - vector_store.py:76 - [加载知识库]D:\AI_Coding\AI大模型RAG与智能体开发\P6_Agent项目\data\扫地机器人常见问题.pdf内容已经存在于知识库内,跳过
+2026-11-13 17:45:47,014 - agent - INFO - vector_store.py:76 - [加载知识库]D:\AI_Coding\AI大模型RAG与智能体开发\P6_Agent项目\data\故障排除.txt内容已经存在于知识库内,跳过
+2026-11-13 17:45:47,015 - agent - INFO - vector_store.py:76 - [加载知识库]D:\AI_Coding\AI大模型RAG与智能体开发\P6_Agent项目\data\维护保养.txt内容已经存在于知识库内,跳过
+2026-11-13 17:45:47,015 - agent - INFO - vector_store.py:76 - [加载知识库]D:\AI_Coding\AI大模型RAG与智能体开发\P6_Agent项目\data\选购指南.txt内容已经存在于知识库内,跳过
+2026-11-13 17:46:21,750 - agent - INFO - vector_store.py:76 - [加载知识库]D:\AI_Coding\AI大模型RAG与智能体开发\P6_Agent项目\data\扫地机器人常见问题.pdf内容已经存在于知识库内,跳过
+2026-11-13 17:46:21,751 - agent - INFO - vector_store.py:76 - [加载知识库]D:\AI_Coding\AI大模型RAG与智能体开发\P6_Agent项目\data\故障排除.txt内容已经存在于知识库内,跳过
+2026-11-13 17:46:21,753 - agent - INFO - vector_store.py:76 - [加载知识库]D:\AI_Coding\AI大模型RAG与智能体开发\P6_Agent项目\data\维护保养.txt内容已经存在于知识库内,跳过
+2026-11-13 17:46:21,753 - agent - INFO - vector_store.py:76 - [加载知识库]D:\AI_Coding\AI大模型RAG与智能体开发\P6_Agent项目\data\选购指南.txt内容已经存在于知识库内,跳过
