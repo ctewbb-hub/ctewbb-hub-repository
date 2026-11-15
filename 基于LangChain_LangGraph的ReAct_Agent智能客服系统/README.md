@@ -14,15 +14,15 @@
 
 ## 效果展示
 
-<img src="D:\AI_Coding\AI大模型RAG与智能体开发\基于LangChain_LangGraph的ReAct_Agent智能客服系统\assets\image-20261115140726053.png" style="zoom:80%;" />
+![图1](assets/image-20261115140726053.png)
 
 ​								图 1 · 普通问答 — RAG 检索知识库回复
 
-<img src="D:\AI_Coding\AI大模型RAG与智能体开发\基于LangChain_LangGraph的ReAct_Agent智能客服系统\assets\image-20261115140846083.png" style="zoom:80%;" />
+![图2](assets/image-20261115140846083.png)
 
 ​							图 2 · Agent 工具调用 — 实时展示推理与工具执行链路
 
-<img src="D:\AI_Coding\AI大模型RAG与智能体开发\基于LangChain_LangGraph的ReAct_Agent智能客服系统\assets\image-20261115140938210.png" style="zoom:80%;" />
+![图2](assets/image-20261115140938210.png)
 
 ​							图 3 · 工具调用详情 — 多步推理与中间结果可视化
 
